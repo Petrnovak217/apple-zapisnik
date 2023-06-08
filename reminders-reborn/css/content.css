@@ -1,0 +1,86 @@
+main {
+	width: 66.666667%;
+	border-left: 2px solid black;
+}
+
+.add-new {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.add-new button {
+	font-size: 1.5rem;
+
+	padding: 0.215rem 0.575rem 0.425rem 0.575rem;
+	margin-bottom: 0.75em;
+
+	border-radius: 0.375rem;
+
+	position: relative;
+	bottom: 0.375rem;
+	right: -0.375rem;
+}
+
+.add-new button:hover {
+	background: rgb(55, 65, 81);
+}
+
+/* TITLES */
+h1 {
+	font-size: 2.25rem;
+	font-family: "Arial Rounded MT Bold";
+	margin-bottom: 1.575rem;
+	display: none;
+}
+
+h1.today {
+	color: rgb(var(--color-today));
+	display: block;
+}
+
+h1.scheduled {
+	color: rgb(var(--color-scheduled));
+}
+
+h1.all {
+	color: rgb(var(--color-all));
+}
+
+h1.flagged {
+	color: rgb(var(--color-flagged));
+}
+
+/* TODOS */
+.todos li {
+	display: flex;
+	line-height: 1.25;
+}
+
+.todos p {
+	flex-grow: 1;
+	padding: 0.625rem 0 0.625rem 0;
+	border-bottom: 1px solid rgb(55, 65, 81);
+}
+
+.todos svg {
+	flex: none;
+
+	width: 2rem;
+	height: 2rem;
+
+	/* background: #bada55; */
+
+	margin-top: 0.425rem;
+	margin-right: 0.425rem;
+
+	stroke: white;
+	stroke-width: 1;
+	fill: rgb(55, 65, 81);
+	stroke: rgb(28, 34, 43);
+
+	cursor: pointer;
+}
+
+.todos svg:hover {
+	fill: rgb(251, 191, 36);
+}

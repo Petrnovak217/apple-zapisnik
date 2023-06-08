@@ -1,0 +1,167 @@
+aside {
+	background: rgb(75, 85, 99);
+	width: 33.333333%;
+}
+
+.controls {
+	display: flex;
+}
+
+.controls button {
+	margin: 0.25rem;
+
+	width: 1rem;
+	height: 1rem;
+
+	background: yellow;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	border-radius: 1rem;
+}
+
+/* CONTROLS */
+.controls .close {
+	background: rgb(248, 113, 113);
+	margin-bottom: 1.25rem;
+}
+
+.controls .close:hover,
+.controls .close:active {
+	background: rgb(239, 68, 68);
+}
+
+.controls .minimize:hover,
+.controls .minimize:active {
+	background: rgb(245, 158, 11);
+}
+
+.controls .maximize {
+	background: rgb(52, 211, 153);
+}
+
+.controls .maximize:hover,
+.controls .maximize:active {
+	background: rgb(16, 185, 129);
+}
+
+/* FORMS */
+input {
+	color: white;
+	font-weight: bold;
+
+	width: 100%;
+	padding: 0.5rem;
+
+	background: rgba(255, 255, 255, 0.4);
+
+	border-top: 1px solid rgb(55, 65, 81);
+	border-left: 1px solid rgb(55, 65, 81);
+
+	border-radius: 0.375rem;
+}
+
+input::placeholder {
+	color: white;
+	opacity: 0.5;
+	font-weight: normal;
+}
+
+/* nav */
+nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5rem;
+}
+
+nav a {
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+nav a:hover {
+	color: white;
+}
+
+nav .today:hover {
+	background: rgb(var(--color-today));
+}
+
+nav .scheduled:hover {
+	background: rgb(var(--color-scheduled));
+}
+
+nav .all:hover {
+	background: rgb(var(--color-all-darker));
+}
+
+nav .flagged:hover {
+	background: rgb(var(--color-flagged));
+}
+
+/*  */
+nav p {
+	display: flex;
+	justify-content: space-between;
+}
+
+aside svg {
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 2.25rem;
+
+	stroke: white;
+	fill: white;
+
+	padding: 0.5rem;
+	margin-bottom: 0.375rem;
+}
+
+nav span {
+	font-size: 1.5rem;
+	line-height: 2.375rem;
+}
+
+.today svg {
+	background-color: rgb(var(--color-today));
+}
+
+.scheduled svg {
+	background-color: rgb(var(--color-scheduled));
+}
+
+.all svg {
+	background-color: rgb(var(--color-all-darker));
+}
+
+.flagged svg {
+	background-color: rgb(var(--color-flagged));
+}
+
+.lists {
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: 0.5rem;
+	margin-top: 0.75rem;
+}
+
+.lists h3 {
+	opacity: 0.4;
+	padding-left: 0.375rem;
+	margin-bottom: 0.325rem;
+}
+
+.lists a {
+	font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+}
+
+.lists svg {
+	margin-right: 0.625rem;
+
+	top: 0.125rem;
+	position: relative;
+
+	background-color: rgb(var(--color-today));
+}
